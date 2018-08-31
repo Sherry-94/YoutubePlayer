@@ -1,10 +1,5 @@
 import React, {Component} from 'react'
 
-// const SearchBar = () =>
-// {
-//     return <input />;
-// };
-
 class SearchBar extends Component {
     constructor(props)
     {
@@ -31,10 +26,6 @@ class SearchBar extends Component {
         this.setState({term: event.target.value});
         this.props.uponVideoSearch(term);
     }
-
-    // onInputChange(e){
-    //     console.log(e.target.value);
-    // }
 }
 
 export default SearchBar;
