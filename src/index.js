@@ -7,8 +7,6 @@ import VideoDetail from './components/video_detail';
 
 const API_KEY = 'AIzaSyB6hOiXRP0otfvNiLTlsUMniJRZCVD-cQk';
 
-
-
 class App extends Component {
 
     constructor(props)
@@ -20,7 +18,6 @@ class App extends Component {
             searchTerm: ''
         };
         this.VideoSearch('godzilla');
-
     }
 
     render(){
@@ -28,7 +25,6 @@ class App extends Component {
         return(
             <div>
                  <SearchBar uponVideoSearch={term=>this.VideoSearch(term)}/>   
-
                  <VideoDetail video={this.state.selectedVideo} />
                  <VideoList onVideoSelect={selectedVideo => this.setState({selectedVideo})}
                   videos={this.state.videos}/>
