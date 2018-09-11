@@ -17,7 +17,7 @@ class App extends Component {
             selectedVideo: null,
             searchTerm: ''
         };
-        this.VideoSearch('godzilla');
+        this.VideoSearch('godzilla'); // retunrs the initial search on page load
     }
 
     render(){
