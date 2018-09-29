@@ -7,7 +7,7 @@ describe('App' , () => {
   beforeEach(() => {
     component = renderComponent(App);
   });
-
+  
   it('renders something', () => {
     expect(component).to.exist;
   });
