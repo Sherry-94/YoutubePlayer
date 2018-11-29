@@ -5,6 +5,7 @@ const VideoDetail = ({video}) =>
     if(!video){
         return<div>Loading.....</div>;
     }
+    
     const videoID = video.id.videoId;
     const url = `http://www.youtube.com/embed/${videoID}`;
     return(
@@ -19,4 +20,5 @@ const VideoDetail = ({video}) =>
         </div>
     );
 };
+
 export default VideoDetail;
